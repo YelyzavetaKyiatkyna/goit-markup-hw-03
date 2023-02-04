@@ -47,7 +47,6 @@ body {
 
 .link {
   text-decoration: none;
-  font-style: normal;
 }
 .list {
   list-style: none;
@@ -163,6 +162,8 @@ body {
   background: var(--primary-brand-color);
   border-radius: 4px;
   padding: 16px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -237,10 +238,6 @@ body {
 }
 .team-item {
   background-color: var(--additional-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -266,19 +263,17 @@ body {
 /*--------------------FOOTER---------------------*/
 .footer {
   background-color: var(--hero-background);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: calc(21 / 18);
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-color);
-  padding-top: 100px;
-  margin-bottom: 16px;
 }
 .footer-logo-part {
   color: var(--primary-brand-color);
@@ -287,21 +282,20 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  padding-bottom: 100px;
   width: 264px;
+  margin-top: 16px;
 }
 
 /*-------------------------------PORTFOLIO-----------------------------------------*/
 .portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .portfolio-list {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .portfolio-item {
 }
@@ -316,6 +310,7 @@ body {
   background: var(--light-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .portfolio-item-btn:hover,
@@ -328,7 +323,6 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  padding-bottom: 120px;
 }
 .portfolio-box-item {
 }
@@ -345,7 +339,16 @@ body {
   padding-bottom: 32px;
   padding-left: 16px;
   border: 1px solid var(--header-border-color);
-  border-top-width: 0;
+  border-top-width: none;
+}
+.portfolio-box-item-title:hover,
+.portfolio-box-item-title:focus {
+  color: var(--pressed-state-color);
+}
+
+.portfolio-box-item-text:hover,
+.portfolio-box-item-text:focus {
+  color: var(--pressed-state-color);
 }
 .portfolio-box-item-title {
   font-weight: 500;
